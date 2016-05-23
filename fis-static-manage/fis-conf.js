@@ -22,7 +22,7 @@ fis.match("**/*", {
         release: false
     }).match('**/**.es', {
         parser: fis.plugin('babel-5.x', {
-             sourceMaps: true,//启用调试
+            sourceMaps: true, //启用调试
             // blacklist: ['regenerator'],
             stage: 3 //ES7不同阶段语法提案的转码规则（共有4个阶段）
         }),
@@ -42,11 +42,11 @@ fis.match("**/*", {
     .match(/^\/view\/(common|home|login|master)\/(.*)\.(html)$/i, {
         parser: fis.plugin('swigt'),
         useCache: false,
-        release: '${view}/$&'
+        release: '${view}/$1/view/$2'
     })
-    .match(/^\/view\/(vue)\/(.*)\.(html)$/i, {
+    .match(/^\/view\/(vue|master)\/(.*)\.(html)$/i, {
         useCache: false,
-        release: '${view}/$&'
+        release: false
     })
     .match(/^\/(widget|site)\/(.*)\.(js)$/i, {
         isMod: true,
@@ -72,8 +72,6 @@ fis.match("**/*", {
     .match(/.*\.(html|jsp|tpl|vm|htm|asp|aspx|php)$/, {
         useCache: false
     });
-
-
 
 //打包与css sprite基础配置
 fis.match('::packager', {

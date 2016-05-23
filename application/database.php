@@ -16,7 +16,7 @@ return [
     // 数据库连接DSN配置
     'dsn'         => '',
     // 服务器地址
-    'hostname'    => '192.168.1.117',
+    'hostname'    => '127.0.0.1',
     // 数据库名
     'database'    => 'pizzaCms',
     // 数据库用户名

@@ -16,6 +16,6 @@ return [
         'type' => 'trace', // 支持 socket trace file
     ],
     'template' => [
-    
+        'view_depr'    => '_',
     ],
 ];
