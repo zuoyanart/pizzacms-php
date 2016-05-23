@@ -16,7 +16,7 @@ return [
     // 数据库连接DSN配置
     'dsn'         => '',
     // 服务器地址
-    'hostname'    => '127.0.0.1',
+    'hostname'    => '192.168.1.117',
     // 数据库名
     'database'    => 'pizzaCms',
     // 数据库用户名
@@ -30,7 +30,7 @@ return [
     // 数据库编码默认采用utf8
     'charset'     => 'utf8',
     // 数据库表前缀
-    'prefix'      => '',
+    'prefix'      => 'pz_',
     // 数据库调试模式
     'debug'       => APP_DEBUG,
     // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)

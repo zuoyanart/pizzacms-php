@@ -1,7 +1,10 @@
 <?php
 namespace app\index\controller;
+use think\Controller;
+use think\Db;
 
-class Index
+
+class Index extends Controller
 {
     public function index()
     {
@@ -12,7 +15,9 @@ class Index
     	return '<h1>test</h1>';
     }
 
-    public function tt() {
-    	return '<h2>asdhjahsdashd</h2>';
+    public function tt($home = 'world') {
+      $data = Db::name('user')->find();
+      $this->assign('result', $data);
+      return $this->fetch();
     }
 }
