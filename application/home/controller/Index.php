@@ -6,6 +6,10 @@ use think\Db;
 
 class Index extends base
 {
+    /**
+     * 加载首页
+     * @return [type] [description]
+     */
     public function index() {
         return $this->fetch();
     }
