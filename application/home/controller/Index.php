@@ -15,7 +15,7 @@ class Index extends base
     }
 
     public function test() {
-      $User = new \model\User;
+      $User = new \app\home\model\User;
     	return $User::userChcekLogin();
     }
 
