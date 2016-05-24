@@ -15,7 +15,8 @@ class Index extends base
     }
 
     public function test() {
-    	return '<h1>test</h1>';
+      $User = new \model\User;
+    	return $User::userChcekLogin();
     }
 
     public function tt($home = 'world') {

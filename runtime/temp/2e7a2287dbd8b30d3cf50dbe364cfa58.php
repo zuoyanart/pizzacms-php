@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"F:\php\pizzacms\public/../application/home\view\index_index.html";i:1464018046;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"F:\php\pizzacms\public/../application/home\view\index_index.html";i:1464059315;}*/ ?>
 
 <!DOCTYPE html>
 <html>
@@ -90,6 +90,6 @@
 
 
  </script>
-<script type="text/javascript" charset="utf-8" src="http://192.168.1.102:8132/livereload.js"></script></body>
+<script type="text/javascript" charset="utf-8" src="http://192.168.1.43:8132/livereload.js"></script></body>
 
 </html>
